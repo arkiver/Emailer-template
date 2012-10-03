@@ -1,0 +1,130 @@
+!!!
+%html{"xml:lang" => "en", :xmlns => "http://www.w3.org/1999/xhtml"}
+  %body  
+    :css
+      h1{
+        padding: 0px;
+        margin: 0px;
+      }
+      hr{
+        color: #000;
+        background-color: #000;
+        width: 88%;
+      }
+      body{
+        margin: 0px;
+        padding: 0px;
+        font-size: 1.3em;
+        font-family: 'stag sans', arial;
+        }
+      table{
+        width: 100%;
+      }
+      table.footer_table{
+        font-size: 0.7em;
+        width: 80%;
+        margin-left:  55px;
+        text-align: center;
+      }
+      table.text_logo_table{
+        height: 100px;
+        background: transparent;
+      }
+      .terms{
+        padding: 5px;
+        font-size: 0.6em;
+      margin-left: 650px;
+      }
+      span.logo_text{
+        font-size: 0.8em;
+      }
+      .left_container{
+        height: 130%;
+      }
+      .center_container{
+        background-image: -webkit-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: -ms-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: -o-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background-image: -moz-radial-gradient(50% 25%, 1140px 1040px, rgba(255, 255, 255, 255) 0%, rgb(200, 215, 36) 38%);
+        background: -moz-radial-gradient(50% 25% , ellipse closest-side, #FFFFFF, #FFBB00 120%) repeat scroll 0 0 #C8D724;
+      }
+      .right{
+        margin-top: 240px;
+        padding-right: 60px;
+      }
+      .left{
+        padding-left: 50px;
+      }
+      .huge_text{
+        font-size: 3.5em;
+      }
+      .text_area.larger{
+        font-size: 1.2em;
+        padding-top: 15px;
+      }
+      .center_footer{
+        padding-bottom: 10px;
+        font-size: 0.6em;
+      }
+      .center_upper_imagebox{
+        padding-left: 190px;
+        padding-top: 40px;
+      }
+    %table
+      %tr
+        %td.left_main_table
+          .left_container
+            %h1
+
+        %td.center_main_table{:width => "750px"}
+          .center_container
+            .center_upper
+              %table.center_upper_table
+                %tr
+                  %td.imagebox{:height => "500px"}
+                    .center_upper_imagebox
+                      %img.center_image{:src => "image_path", :alt => "center logo image"}
+            .center_mid
+              %table.text_logo_table
+                %tr
+                  %td{:width=> "900px"}
+                    .left
+                      .huge_text
+                        Lorem 
+                      .huge_text
+                        Ipsum 
+                      .text_area.larger
+                        Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                      .text_area.larger
+                        %p
+                          Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                        %p  
+                          Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+                        
+                  %td{:align => "center"}
+                    .right
+                      %a{:href => "<point logo to a URL>"}
+                        %img{:src => "image.png", :alt => "logo", :id => "logo"}
+                      %span.logo_text
+                        
+            %hr      
+            .center_footer
+              %table.footer_outer
+                %tr
+                  %td{:width => "190px;"}
+                    lorem ipsum &nbsp|
+                  %td{:width => "170px;"}
+                    lorem ipsum 24X7&nbsp;|
+                  %td{:width => "190px;"}
+                    lorem ipsum
+                  %td
+                    %a{:href => "https://foobarbaz.com"}
+                      %img.footer_image_one{:src => "image.png", :alt => "foo bar baz"}
+                  %td
+                    %a{:href => "http://foobarbaz.com"}
+                      %img.footer_image_two{:src => "image.png", :alt => "foo bar baz"}
+
+        %td.right_main_table
+          .right_container
+            %h1
